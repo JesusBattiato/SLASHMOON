@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+  
+    
+    <title>slashmOOn</title>
+</head>
+
+
+<body>
+    <h1 class="titulo" id="titulo">SLASHMOON</h1>
+ <section id="inicio">
+    
+
+    
+    <div class="bienvenida">
+        <h2 class="subtitulo">¿Estas seguro de querer Jugar?</h2>
+        <h2 class="subtitulo">Nunca Ganaras!</h2>            
+        <button class="btn" id="btn-iniciar-juego">Iniciar Juego</button>
+    </div>
+
+</section>
+<section id="eleccion-personaje">
+    <h2 class="subtitulo-2">Elige a tu Campeón!</h2>
+    <div class="tarjetas">
+
+        <input type="radio" name="monster" id="AQUO" value="AQUO"/>
+        <label class="tarjeta-de-monster" for="AQUO">
+            <p>AQUO</p>
+            <img  src="/assets/monster-agua.png" alt="AQUO">
+        </label>
+       
+        <input type="radio" name="monster" id="BOLAR" value="BOLAR"/>
+        <label class="tarjeta-de-monster" for="BOLAR">
+            <p>BOLAR</p>
+            <img src="/assets/monster-arbol.png" alt="BOLAR">
+        </label>
+        
+        <input type="radio" name="monster" id="CUERN" value="CUERN" />
+        <label class="tarjeta-de-monster" for="CUERN">
+            <p>CUERN</p>
+            <img src="/assets/monster-cabra.png" alt="CUERN">
+        </label>
+        
+        <input type="radio" name="monster" id="FAIER" value="FAIER" />
+        <label class="tarjeta-de-monster" for="FAIER">
+            <p>FAIER</p>
+            <img src="/assets/monster-fuego.png" alt="FAIER">
+        </label>
+        
+        <input type="radio" name="monster" id="FREIZER" value="FREIZER"/>
+        <label class="tarjeta-de-monster" for="FREIZER">
+            <p>FREIZER</p>
+            <img src="/assets/monster-hielo.png" alt="FREIZER">
+        </label>
+      
+        <input type="radio" name="monster" id="OUGER" value="OUGER"/>
+        <label class="tarjeta-de-monster" for="OUGER">
+            <p>OUGER</p>
+            <img src="/assets/monster-ogro.png" alt="OUGER">
+        </label>
+        
+        <input type="radio" name="monster" id="THRONOS" value="THRONOS"/>
+        <label class="tarjeta-de-monster" for="THRONOS">
+            <p>THRONOS</p>
+            <img src="/assets/monster-rayo.png" alt="THRONOS">
+        </label>
+   
+        <input type="radio" name="monster" id="RACUN" value="RACUN"/>
+        <label class="tarjeta-de-monster" for="RACUN">
+            <p>RACUN</p>
+            <img src="/assets/monster-tierra.png" alt="RACUN">
+        </label>
+              
+    </div>
+    <button class="btn" id="btn-monster">A Pelear!</button>
+</section>
+
+<section id="combate">
+    <h2 class="subtitulo-2" id="subtitulo-combate">A Pelear!!!</h2>
+    <h2 class="subtitulo-3" id="subtitulo-2-combate">Elige tu ataque</h2>
+    <div class="ataques" id="seccionataques">
+        
+        <button class="btn-atq" value="AGUA">Latigo de Agua</button>
+        <button class="btn-atq" value="MADERA">Maderazo</button>
+        <button class="btn-atq" value="BESTIA">Estocazo</button>
+        <button class="btn-atq" value="FUEGO">Bola de Fuego</button>
+        <button class="btn-atq" value="HIELO" >COSA DE HIELO</button>
+        <button class="btn-atq" value="OSCURIDAD" >EL COSO NEGRO</button>
+        <button class="btn-atq" value="ELECTRICIDAD" >LINTERNITA DE LUZ</button>
+        <button class="btn-atq" value="TIERRA" >COSO DE TIERRA</button>
+    </div>
+    <div class="campeones">
+        
+        <div class="pjeJugador" id="pjeJugador">
+            <p class="nbre-campeon">RACUN</p>
+            <img src="/assets/monster-tierra.png" alt="RACUN" class="img-campeon" id="img-campeon">
+            <p class="vidas" id="vida-jugador">Vidas: 3</p>
+     <!--
+            <div class="jugador">
+                <h3 class="nbre-campeon">Atk Jugador</h3>
+                <p class="ataque">Ataque1</p>
+            </div>
+
+        -->
+        </div>
+   
+        <div class="separador">
+            <p class="atq-jugador" id="atq-jugador"></p>
+            <p class="vs" id="vs">VS</p>
+            <p class="atq-PC" id="atq-PC"></p>
+            <button id="reiniciar">Reiniciar</button>
+        </div>
+        <div class="pjePc" id="pjePc">
+            <p class="nbre-campeon">THRONOS</p>
+            <img src="/assets/monster-rayo.png" alt="THRONOS" class="img-campeon" id="img-pc">
+            <p class="vidas" id="vida-pc">Vidas: 3</p>
+          <!--
+            <div class="pc">
+                <h3 class="nbre-campeon">Atk PC</h3>
+                <p class="ataque">Ataque1</p>
+            </div>
+        -->
+        </div>
+    </div>
+
+   
+</section>
+
+
+</body>
+<footer>
+    <a class="dibujos" href="https://www.behance.net/gallery/36609005/Tap-Knight/modules/228877115" target="_blank">Imagenes de "Елена Семенко" - behance.net</a>
+    <p>Jesus Battiato - Proyecto de  <img id="logo-platzi" src="/assets/logo-platzi.png" alt=""> Platzi</p>
+</footer>
+<script src="/js/slashmoon.js"></script>
+</html>
